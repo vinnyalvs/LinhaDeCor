@@ -1,0 +1,217 @@
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: inline;
+  // background-color: inherit;
+  padding: 22px 16px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.goals-tab {
+  display: inline;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  // background-color: #ccc;
+}
+
+/* Style the tab content */
+.goals-tabcontent {
+  float: left;
+  padding: 0px 12px;
+  //border: 1px solid #ccc;
+  border-left: none;
+  color: #ccc;
+}
+
+.nun-text.active {
+  border-bottom: 1px solid #fff;
+}
+.nun-text{
+  -webkit-text-stroke: 1px #fff;
+  font-family: NeueWorld, fantasy;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  font-size: 36px;
+  margin-top: 0;
+  background-color: #262626;
+  width: 93.5px;
+  height: 93px;
+  margin-right: 2rem;
+  border: #262626;
+  //border-radius: 51px;
+}
+
+.goals-Num{
+  padding: 0;
+  p {
+    font-size: 136px;
+    opacity: 0.7;
+    color: #2f2f2f;
+    -webkit-text-stroke: 3px #fff;
+
+  }
+}
+
+.goals-Desc {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+      "Desc-1";
+  grid-area: Desc;
+}
+
+.goals-Img-Name {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  // align-items: center;
+  grid-template-areas:
+      "goals-Profile-img goals-Profile-name";
+  grid-area: Img-Name;
+
+  .h2-subtitle{
+    font-family: NeueWorld, fantasy;
+    font-weight: normal !important;
+    text-transform: uppercase !important;
+  }
+
+}
+
+.goals-Profile-img{
+  height: 200px;
+  .big-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.goals-Desc-1 { grid-area: Desc-1; }
+
+
+.goals-desc{
+  font-family: DurangoKidMedium, serif;
+  font-size:20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #fff;
+  display: block;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 768px) {
+.goals-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Logo Header"
+      "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1080px;
+    margin: auto;
+  }
+
+  .goals-Sidebar {  display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      "Menu";
+    grid-area: Sidebar;
+  }
+
+  .goals-Menu {  display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Menu-Left-01 Menu-Right-01"
+      "Menu-Left-02 Menu-Right-02"
+      "Menu-Left-03 Menu-Right-03"
+      "Menu-Left-04 Menu-Right-04"
+      "Menu-Left-05 Menu-Right-05"
+      "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .goals-Content {  display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 45%;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "goals-Name-Desc goals-Figures ";
+    margin-left: 5em;
+    align-items: center;
+  }
+
+  .goals-Name-Desc{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "goals-Num"
+      "goals-Desc";
+    height: 100%;
+  }
+
+   .goals-Figures {
+     display: flex;
+     align-items: center;
+   }
+}
+
+@media screen and (max-width: 768px){
+  .goals-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .goals-Img-Name {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .goals-Menu{
+    display: none;
+  }
+
+  .goals-Content{
+    flex: 1;
+  }
+
+
+}

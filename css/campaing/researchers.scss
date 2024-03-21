@@ -1,0 +1,237 @@
+.researchers-img {
+  object-fit: cover;
+  object-position: top;
+  background-color: #363636;
+  width: 93.5px;
+  height: 93px;
+  margin-right: 2rem;
+  border-radius: 51px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.Ana {
+  background-image: url('../../img/researchers/Ana.jpg');
+}
+
+.Bruna {
+  background-image: url('../../img/researchers/Bruna.jpg');
+}
+
+.Thula {
+  background-image: url('../../img/researchers/Thula.jpg');
+  background-position: top;
+}
+
+.Mateus {
+  background-image: url('../../img/researchers/Mateus.jpg');
+}
+
+.Itan {
+  background-image: url('../../img/researchers/Itan.jpg');
+}
+
+.Fernanda {
+  background-image: url('../../img/researchers/Fernanda.jpg');
+}
+
+.Stephanie {
+  background-image: url('../../img/researchers/Stephanie.jpg');
+}
+
+.researchers-desc{
+  font-family: DurangoKidMedium, serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #fff;
+  display: block;
+  margin-right: 10%;
+}
+
+.researchers-Profile-img {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto auto;
+
+  .big-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .researchers-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1080px;
+    margin: auto;
+  }
+
+  .researchers-Sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .researchers-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .researchers-Content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "researchers-Name-Desc researchers-Figures ";
+    margin-left: 5em;
+    align-items: center;
+  }
+
+  .researchers-Name-Desc {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "researchers-Img-Name"
+    "researchers-Desc";
+    height: 100%;
+  }
+
+  .researchers-Figures {
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: inline;
+    // background-color: inherit;
+    padding: 22px 16px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .researchers-tab {
+    display: inline;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    // background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .researchers-tabcontent {
+    float: left;
+    padding: 0px 12px;
+    //border: 1px solid #ccc;
+    border-left: none;
+    color: #ccc;
+  }
+
+  .researchers-Desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Desc-1";
+    grid-area: Desc;
+  }
+
+  .researchers-Img-Name {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    // align-items: center;
+    grid-template-areas:
+    "researchers-Profile-img researchers-Profile-name";
+    grid-area: Img-Name;
+  }
+
+  .researchers-Desc-1 {
+    grid-area: Desc-1;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .researchers-main {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .researchers-Sidebar {
+    display: none;
+  }
+
+  .researchers-Menu {
+    display: none;
+  }
+
+
+  .researchers-Content {
+    display: flex;
+    align-items: center;
+  }
+
+  .researchers-Name-Desc {
+    display: flex;
+    height: 100%;
+  }
+}

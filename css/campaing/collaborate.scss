@@ -1,0 +1,114 @@
+.collaborate-Text {
+  overflow: scroll;
+  color: #fff;
+  font-family: SuisseWorks;
+  font-size: 20px;
+  -ms-overflow-style: none; /* IE and Edge */
+  margin-left: 5%;
+
+  p {
+    margin-left: 20%;
+  }
+}
+
+.collaborate-Text::-webkit-scrollbar {
+  display: none;
+}
+
+.collaborate-Title-2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: SuisseWorks;
+}
+
+
+.collaborate-Sidebar {
+  display: none;
+}
+
+.collaborate-img{
+  //object-fit: cover;
+  //object-position: top;
+  width: 93.5px;
+  height: 93px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin: auto;
+}
+
+.sponsor-img-container{
+  display: flex;
+  flex-direction: row;
+}
+.rumos{
+  background-image: url('../../img/collaborate/rumos_pb.png');
+  background-color: #262626 ;
+  width: 176px;
+  height: 58px;
+}
+
+.rio{
+  background-image: url('../../img/collaborate/rio_filmes.png');
+  width: 276px;
+  height: 58px;
+  background-color: #363636;
+  fill: #262626;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+}
+.nirema{
+  background-image: url('../../img/collaborate/NIREMA_1_copiar.png');
+}
+.hn{
+  background-image: url('../../img/collaborate/historiadores_negros_1.png');
+}
+.pretugues{
+  background-image: url('../../img/collaborate/logo_Direito_em_pretugues.png');
+}
+
+@media screen and (min-width: 768px) {
+  .collaborate-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1016px;
+    margin: auto;
+  }
+
+  .collaborate-Content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Text";
+    grid-area: Content;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .collaborate-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .collaborate-Content {
+    display: flex;
+  }
+}

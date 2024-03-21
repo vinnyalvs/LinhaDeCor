@@ -1,0 +1,157 @@
+@import "../comon";
+
+.post-show-content{
+  .post-show-content-title{
+    text-align: center;
+    h2{
+      font-family: NeueWorld;
+      font-size: 75px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      display: inline;
+    }
+
+    .event-date {
+      text-align: left;
+      -webkit-text-stroke: 2px #000;
+      color: $postShowBackgroundColor;
+      font-size: 150px;
+    }
+
+    .event-title{
+      text-align: right;
+      display: inline;
+      color: #262626;
+      text-transform: capitalize;
+    }
+  }
+
+  .post-show-content-body{
+    margin: 2% 10% 2% 10%;
+    text-align: justify;
+    overflow: scroll;
+  }
+  overflow: scroll;
+
+}
+
+.post-show-footer{
+  background-color: #262626;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  .back-to-timeline-button{
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
+
+  .next-event-button{
+    text-align: center;
+    float: right;
+    width: 100%;
+  }
+
+  a{
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.post-body{
+  background-color: $postShowBackgroundColor;
+}
+.post-show-aux{
+  .hamburger__icon{
+    background-color:$postShowfontColor ;
+  }
+
+  .menu-label{
+    color:$postShowfontColor;
+  }
+
+  .banner{
+    background-color: $postShowBackgroundColor;
+  }
+}
+
+.post-show-logo-header{
+  .logo-img {
+    background-image: url('../../img/Logo-black.png') ;
+    background-repeat: no-repeat;
+    background-size: 290px 254px;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transition: background-color 1s, width 1s;
+  }
+
+  .Logo{
+    background-color: $postShowBackgroundColor;
+    border-right: none !important;
+  }
+
+  .header-img {
+    fill: black;
+    -webkit-mask: url('../../img/Header.svg') no-repeat center;
+    background-color: black
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+.post-show-main {
+  background-color: $postShowBackgroundColor;
+  color: $postShowfontColor;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 60% 15%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "post-show-logo-header"
+    "post-show-content"
+    "post-show-footer";
+  height: 100%;
+  max-width: 1920px;
+  min-height: 1016px;
+  max-height: 1080px;
+  margin: auto;
+}
+
+.post-show-logo-header{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 100%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Logo Header";
+  height: 100%;
+}
+
+
+}
+@media screen and (max-width: 769px) {
+  .header-img {
+    display: none;
+  }
+
+  .post-show-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-show-logo-header{
+    display: flex;
+    flex-direction: column;
+
+    .Logo{
+      .logo-img{
+        height: 250px;
+      }
+    }
+  }
+}

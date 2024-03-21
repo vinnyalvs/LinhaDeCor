@@ -1,0 +1,181 @@
+
+@media screen and (min-width: 768px) {
+  .synopsis-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1080px;
+    margin: auto;
+  }
+
+  .synopsis-Sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .synopsis-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .synopsis-Content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Img-Name"
+    "Desc";
+    grid-area: Content;
+  }
+
+  .synopsis-Img-Name {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Profile-img Profile-name";
+    grid-area: Img-Name;
+  }
+
+
+  .synopsis-Profile-img {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .synopsis-Profile-name {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+    "director-aux"
+    "director-job";
+    grid-area: Profile-name;
+  }
+
+  .synopsis-Desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Desc-1";
+    grid-area: Desc;
+  }
+
+  .synopsis-Desc-1 {
+    grid-area: Desc-1;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .synopsis-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .Sidebar {
+    display: flex !important;
+    flex-direction: column;
+
+  }
+
+  .synopsis-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .synopsis-Img-Name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item{
+    flex: 1;
+  }
+
+  .photo-img {
+    width: 100%;
+    height: 400px !important;
+  }
+
+}
+
+.Sidebar {
+  border-right: 1px solid white !important;
+}
+
+
+.synopsis-desc {
+  font-family: SuisseWorks;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #fff;
+  display: block;
+  margin-right: 10%;
+}
+
+.photo-img {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  border-radius: 51.5px;
+  background-image: url('../../img/Foto_copiar.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}

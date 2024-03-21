@@ -1,0 +1,42 @@
+.Menu-item{
+    color: white;
+    font-size: 22px;
+    font-family: DurangoKidMedium;
+}
+
+.div-menu-right:hover{
+    border: solid 0.5px #fff;
+    background-color: #f4f3f0;
+
+    a{
+        color: #262626;
+    }
+ }
+
+
+ a{
+    color: #fff;
+     text-decoration: none;
+ }
+
+.div-menu-right {
+    margin: 0 0 0 8.5px;
+    padding: 4px 13.5px 5.5px 14px;
+    border-radius: 22.5px;
+    border: solid 1px #f4f3f0;
+    background-color: #262626;
+    font-size: 22px;
+    font-family: DurangoKidMedium;
+    max-width: 350px;
+    display: block;
+    transition: 0.5s;
+    // display: none;
+}
+
+.white{
+    background-color: #f4f3f0;
+
+    a{
+        color: #262626;
+    }
+}

@@ -1,0 +1,97 @@
+.paths-Content{
+  ul {
+    list-style-type: none;
+
+  }
+
+  .paths-text-container {
+    border-bottom: 1px solid #fff;
+    margin-left: 23px;
+    h2{
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+  }
+
+  div {
+    color: #fff;
+    font-family: DurangoKidMedium;
+    font-size:22px;
+  }
+
+  p {
+    font-size:24px;
+    margin: 5px;
+    letter-spacing: normal;
+    font-family: SuisseWorks, serif;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .paths-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Logo Header"
+      "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1016px;
+    margin: auto;
+  }
+
+  .paths-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Menu-Left-01 Menu-Right-01"
+      "Menu-Left-02 Menu-Right-02"
+      "Menu-Left-03 Menu-Right-03"
+      "Menu-Left-04 Menu-Right-04"
+      "Menu-Left-05 Menu-Right-05"
+      "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .paths-Content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 26% 38% 38%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "paths-Text-1"
+      "paths-Text-2"
+      "paths-Text-3";
+    grid-area: Content;
+    margin-left: 5%;
+  }
+
+}
+@media screen and (max-width: 768px){
+  .paths-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paths-Menu{
+    display: none;
+  }
+
+  .paths-Content{
+    flex: 1;
+  }
+
+  .letter-Text{
+    flex: 1;
+  }
+}
+

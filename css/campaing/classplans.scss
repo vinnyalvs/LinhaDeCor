@@ -1,0 +1,130 @@
+
+.classplans-Text {
+  overflow: scroll;
+  color: #fff;
+  font-family: SuisseWorks;
+  font-size: 20px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Fi */
+  p {
+    margin-left: 20%;
+  }
+}
+
+.classplans-Text::-webkit-scrollbar {
+  display: none;
+}
+
+.classplans-Title-1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: SuisseWorks;
+}
+
+.classplans-Title-2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: SuisseWorks;
+}
+
+
+.classplans-download {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: SuisseWorks, serif;
+  text-align: center;
+  border: 2px solid #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .classplans-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1016px;
+    margin: auto;
+  }
+
+  .classplans-Sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .classplans-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .classplans-Content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Text";
+    grid-area: Content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .classplans-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .classplans-Sidebar {
+    display: none;
+  }
+
+  .classplans-Menu {
+    display: none;
+  }
+
+  .classplans-Content {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .classplans-Text {
+    overflow: scroll;
+    p {
+      margin: 20px auto;
+    }
+  }
+
+}

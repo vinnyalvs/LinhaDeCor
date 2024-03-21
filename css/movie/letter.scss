@@ -1,0 +1,110 @@
+.letter-Title-1 {
+  font-size: 130px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: NeueWorld, fantasy, serif;
+  margin-bottom: 1px;
+  font-weight: normal;
+}
+
+.letter-Title-2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 2px;
+  font-family: NeueWorld, serif;
+  font-weight: normal;
+}
+
+
+.letter-Text {
+  overflow: scroll;
+  color: #fff;
+  font-family: SuisseWorks;
+  font-size: 20px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Fi */
+  margin-left: 5%;
+
+  p {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .letter-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1016px;
+    margin: auto;
+  }
+
+  .letter-Sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .letter-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+
+  .letter-Content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Text";
+    grid-area: Content;
+    margin-left: 5%;
+
+  }
+
+  .letter-Text::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .letter-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .letter-Content{
+    flex: 1;
+  }
+
+  .letter-Text{
+    flex: 1;
+  }
+}

@@ -1,0 +1,153 @@
+
+.producers-Content {
+  display: flex;
+  overflow: scroll;
+}
+
+.producers-Content::-webkit-scrollbar {
+  display: none;
+}
+
+.producers-Figures {
+  display: flex;
+  align-items: center;
+
+}
+
+.prod-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.producers-left-container {
+  float: right;
+  margin: 30px 30px 30px;
+}
+
+.producers-right-container {
+  flex: 1;
+  float: right;
+
+  p {
+    font-size: 20px;
+    font-family: SuisseWorks, serif;
+  }
+}
+
+.producers-img {
+  object-fit: cover;
+  object-position: top;
+  background-color: #363636;
+  width: 100px;
+  height: 103px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.prod-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.prod-title {
+  flex: 1;
+  font-size: 50px;
+  font-family: DurangoKidMedium, serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Ngongo {
+  background-image: url('../../img/producers/ngongo.png');
+}
+
+.Vidigal {
+  background-image: url('../../img/producers/vidgal.png');
+}
+
+.Carapia {
+  background-image: url('../../img/producers/carapia.png');
+}
+
+.Roinssart {
+  background-image: url('../../img/producers/roinssart.png');
+}
+
+.Parati {
+  background-image: url('../../img/producers/parati.png');
+}
+
+.Sidebar {
+  border-right: 1px solid white !important;
+}
+
+@media screen and (min-width: 768px) {
+  .producers-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar producers-Content";
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1080px;
+    margin: auto;
+  }
+
+  .producers-Sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .producers-Menu {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06";
+    grid-area: Menu;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .producers-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .producers-Sidebar{
+    display: none;
+  }
+
+  .producers-Menu{
+    display: none;
+  }
+
+  .producers-Content{
+    flex: 1;
+  }
+}
