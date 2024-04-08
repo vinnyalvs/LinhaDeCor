@@ -33,14 +33,14 @@
     <div class="timeline-Content">
         @include('landingpage.partials.exposition')
 
-        <div class="exposition-buttons">
+        {{-- <div class="exposition-buttons">
             <a href="{{ url('/') }}">
             <div id="edital-button">
                 <p class="sheet-subtitle-label">{{__('movie/sheet.director')}}</p>
                 <p>{{__('movie/sheet.director_content')}}</p>
             </div>
             </a>
-        </div>
+        </div> --}}
     </div>
 </div>
 </body>

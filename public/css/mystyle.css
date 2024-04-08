@@ -78,7 +78,8 @@ p, h2, h3, h4 {
   background-image: url("../img/logo/LOGO_Constituinte.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 210px;
+  background-size: 455.8px 140px;
+  height: 500px;
   width: 100%;
   transition: background-color 1s, width 1s;
 }
@@ -1936,7 +1937,8 @@ p, h2, h3, h4 {
   background-image: url("../img/logo/LOGO_Constituinte.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 210px;
+  background-size: 455.8px 140px;
+  height: 500px;
   width: 100%;
   transition: background-color 1s, width 1s;
 }
