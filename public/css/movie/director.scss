@@ -1,0 +1,205 @@
+
+span{
+  color: #fff;
+}
+
+
+.director-desc{
+  font-family: SuisseWorks;
+  font-size:20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #fff;
+  display: block;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    color: #fff;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Logo Header"
+    "Sidebar Content";
+    height: 100%;
+    max-width: 1920px;
+    min-height: 1016px;
+    max-height: 1080px;
+    margin: auto;
+  }
+
+  .Sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .Sidebar {  display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "."
+    "Menu";
+    grid-area: Sidebar;
+  }
+
+  .Menu {  display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 14% 14% 14% 14% 14% 14%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Menu-Left-01 Menu-Right-01"
+    "Menu-Left-02 Menu-Right-02"
+    "Menu-Left-03 Menu-Right-03"
+    "Menu-Left-04 Menu-Right-04"
+    "Menu-Left-05 Menu-Right-05"
+    "Menu-Left-06 Menu-Right-06"
+    "Menu-Left-07 Menu-Right-07";
+    grid-area: Menu;
+  }
+
+
+  .Img-Name {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    // align-items: center;
+    margin-top: 2%;
+    grid-template-areas:
+    "Profile-img Profile-name";
+    grid-area: Img-Name;
+  }
+
+  .Profile-img  { display: grid;  align-items: center; text-align: center;}
+
+  .Profile-name {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+    "director-aux"
+    "director-job";
+    grid-area: Profile-name ;
+  }
+
+  .Desc {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Desc-1 Desc-2";
+    grid-area: Desc;
+  }
+
+  .Desc-1 { grid-area: Desc-1; }
+
+  .Desc-2 { grid-area: Desc-2; }
+
+  .Logo {
+    grid-area: Logo;
+    border-right: 1px solid white;
+  }
+
+  .Header {  display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ".";
+    grid-area: Header;
+  }
+
+  .Sidebar{
+    border-right: 1px solid white !important;
+  }
+
+  .director-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    max-width: 203.5px;
+    max-height: 203px;
+    border-radius: 51.5px;
+    background-image: url('../../img/MarianaLuiza.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  .header-img {
+    fill: #fff;
+    -webkit-mask: url('../../img/Header.svg') no-repeat center;
+    background-color: rgb(245, 239, 239);
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Sidebar {
+    display: none;
+  }
+
+  .Menu {
+    display: none;
+  }
+
+  .Content {
+    flex: 1;
+  }
+
+  .Img-Name {
+    flex: 1;
+  }
+
+  .Profile-img{
+    flex: 1;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 51.5px;
+    background-image: url('../../img/MarianaLuiza.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+
+}
+

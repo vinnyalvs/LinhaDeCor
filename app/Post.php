@@ -1,0 +1,27 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model
+{
+    protected $fillable = [
+        'user_id', 'title', 'subtitle', 'body', 'thumbnail' ,
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function blogPost()
+    {
+        return $this->hasOne(BlogPost::class, 'id', 'id');
+    }
+
+    public function timelinePost()
+    {
+        return $this->hasOne(TimelinePost::class, 'id', 'id');
+    }
+}
