@@ -8,5 +8,5 @@ return [
     'education' => 'Educação',
     'education_text' => 'Barreira social criada em face de costumes, leis, diferenças econômicas para separar brancos de não brancos.',
     'movie' => 'Filme',
-    'movie_text' => 'Barreira social criada em face de costumes, leis, diferenças econômicas para separar brancos de não brancos.',
+    'movie_text' => 'Ao reencontrar um autorretrato de minha avó Divina, onde a senhora negra se pinta branca, dou início a uma jornada de autoconhecimento, cura colonial e reinvenção de mim mesma. Onde memórias, sentimentos, pulsões e traumas se entremeiam a momentos históricos da política brasileira que consolidaram o projeto de branqueamento da população.',
 ];

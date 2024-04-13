@@ -3,7 +3,7 @@
   padding: 2%;
   color: #fff;
   display: block;
-  min-height: 700px;
+  min-height: 300px;
 
   .internal-verbete {
     margin-left: 10%;
@@ -160,7 +160,11 @@
   }
 
   .timeline-Sidebar {
-    display: none;
+    height: 100%;
+  }
+
+  .timeline-verbete {
+    height: 100%;
   }
 
 }
