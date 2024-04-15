@@ -109,8 +109,8 @@
         <div class="image-container">
             <img class="img-00" id="rumos" src="{{url('../img/selo rumos_[apoio]_br.png')}}">
             <img class="img-00" src="{{url('../img/Logo_Cross_Screen_Wht.png')}}"> 
-            <img class="img-00" src="{{url('../img/SECEC HORIZONTAL BRANCA.png')}}">
-            <img class="img-large" src="{{url('../img/barradelogos-s.png')}}">  
+            <img class="img-gov" src="{{url('../img/SESEC.png')}}">
+            <img class="img-large img-gov" src="{{url('../img/barradelogos-s.png')}}">  
         </div>
 
     </div>
