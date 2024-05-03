@@ -59,9 +59,10 @@
     <div class="welcome-sidebar">
         <div class="welcome-verbete">
             <div class="internal-verbete">
-                <p class ="subtitle-name"> Sobre o Projeto </p>
+                <p class ="entry-text about-project"> {{__('landingpage/entrys.about_project')}}</p>
+
                 <br>
-                <details class="verbete-entry" open>
+                <details class="verbete-entry">
                     <summary class="entry-title">{{__('landingpage/entrys.exposition')}}</summary>
                     <p class ="entry-text"> {{__('landingpage/entrys.exposition_text')}} </p>
                 </details>
@@ -82,6 +83,8 @@
     </div>
     <div class="welcome-exposition">
         @include('landingpage.partials.exposition')
+        <p class ="entry-text"> {{__('landingpage/entrys.constituinte_text')}} </p>
+        <p class ="entry-text"> {{__('landingpage/entrys.constituinte_text_2')}} </p>
         <div class="exposition-buttons">
             <a href="{{ url('/') }}">
             <div class ="exposition-button" id="edital-button">
@@ -96,23 +99,22 @@
         </div>
     </div>
 </div>
-<div class = "welcome-footer"> 
+<div class = "welcome-footer">
     <div class="footer-column">
         <h3>CO - Realização</h3>
         <div class="image-container">
             <img class="img-00" id="ngongo" src="{{url('../img/ngongo-s.png')}}">
-            <img class="img-00" src="{{url('../img/awelle.png')}}">
+            <img class="img-00" id="awelle" src="{{url('../img/awelle.png')}}">
         </div>
     </div>
     <div class="footer-column">
         <h3>Patrocínio</h3>
         <div class="image-container">
-            <img class="img-00" id="rumos" src="{{url('../img/selo rumos_[apoio]_br.png')}}">
+            <img class="img-00" id="rumos" src="{{url('../img/selorumos.png')}}">
             <img class="img-00" src="{{url('../img/Logo_Cross_Screen_Wht.png')}}"> 
             <img class="img-gov" src="{{url('../img/SESEC.png')}}">
             <img class="img-large img-gov" src="{{url('../img/barradelogos-s.png')}}">  
         </div>
-
     </div>
 </div>
 </div>

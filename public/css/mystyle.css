@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DurangoKidMedium";
   src: url("../fonts/durango-kid-medium-webfont.woff2") format("woff2"), url("../fonts/durango-kid-medium-webfont.woff") format("woff");
@@ -22,6 +23,32 @@
   font-weight: normal;
   font-style: normal;
 }
+.header-img {
+  fill: white !important;
+  -webkit-mask: url("../img/header-s.png") no-repeat center;
+}
+
+.Header {
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 40%;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas: "header-img" "header-logo";
+}
+.Header .header-logo {
+  align-items: flex-end;
+  text-align: right;
+  font-family: DurangoKidMedium;
+  color: #f4f3f0;
+}
+.Header .header-logo p {
+  margin: 0;
+}
+.Header .header-logo i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 body, .main {
   background-color: #262626;
 }
@@ -51,6 +78,9 @@ p, h2, h3, h4 {
 .internal-verbete .subtitle-name {
   margin-left: 10%;
 }
+.internal-verbete .about-project {
+  margin: 10px 50px 0 40px;
+}
 
 .exposition-button, .inscription-button {
   margin: 0 0 0 8.5px;
@@ -60,7 +90,7 @@ p, h2, h3, h4 {
   background-color: #f4f3f0;
   color: #262626;
   font-size: 22px;
-  font-family: SuisseWorks;
+  font-family: DurangoKidMedium, serif;
   max-width: 350px;
   display: block;
   transition: 0.5s;
@@ -70,10 +100,10 @@ p, h2, h3, h4 {
 
 .subtitle-name {
   margin-top: 10%;
-  margin-bottom: 0%;
+  margin-bottom: 5%;
   font-family: DurangoKidMedium;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.84;
@@ -103,17 +133,23 @@ p, h2, h3, h4 {
   grid-area: Menu;
   align-items: center;
   justify-items: center;
+  margin-top: 5%;
 }
 
 .exposition-img {
   fill: #fff;
   background-image: url("../img/logo/LOGO_Constituinte.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80vh 30vh;
-  height: 50vh;
   width: 100%;
-  transition: background-color 1s, width 1s;
+  /* Ocupa toda a largura disponível */
+  height: 0;
+  padding-top: 30.7152259763%;
+  /* Calcula a proporção da imagem */
+  background-size: contain;
+  /* Faz a imagem caber dentro do elemento */
+  background-repeat: no-repeat;
+  /* Evita a repetição da imagem */
+  background-position: center;
+  /* Posiciona a imagem no centro */
 }
 
 @media screen and (min-width: 1000px) {
@@ -129,6 +165,10 @@ p, h2, h3, h4 {
   }
 }
 @media screen and (max-width: 1000px) {
+  .welcome-verbete {
+    margin-bottom: 0 !important;
+  }
+
   .exposition-buttons {
     display: grid;
     grid-template-columns: 100%;
@@ -138,17 +178,6 @@ p, h2, h3, h4 {
     grid-template-areas: "exposition-button" "inscription-button";
     grid-area: Menu;
     margin-bottom: 20px;
-  }
-
-  .exposition-img {
-    fill: #fff;
-    background-image: url("../img/logo/LOGO_Constituinte.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 70%;
-    height: 300px;
-    width: 100%;
-    transition: background-color 1s, width 1s;
   }
 
   .Sidebar {
@@ -175,13 +204,17 @@ p, h2, h3, h4 {
     -o-background-size: contain;
   }
 }
+.welcome-exposition .entry-text {
+  margin: 20px;
+}
+
 @media screen and (min-width: 1000px) {
   .welcome-main {
     background-color: #262626;
     color: #f4f3f0;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 65% 10%;
+    grid-template-rows: 15% 75% 10%;
     grid-auto-flow: row;
     grid-template-areas: "welcome-logo-header" "welcome-content" "welcome-footer";
     margin: auto;
@@ -231,6 +264,13 @@ p, h2, h3, h4 {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset !important;
+  }
 }
 .welcome-footer {
   background-color: #262626;
@@ -265,6 +305,7 @@ p, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
 }
 
 .image-container {
@@ -288,6 +329,7 @@ p, h2, h3, h4 {
 .image-container .img-00 {
   height: auto;
   max-height: 60px;
+  margin: 15px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -307,8 +349,14 @@ p, h2, h3, h4 {
 }
 
 #ngongo {
+  max-height: 200px;
+  height: 100px;
+  max-width: 100px;
+}
+
+#awelle {
   max-height: 170px;
-  max-width: 70px;
+  height: 40px;
 }
 
 .footer-column h3 {
@@ -321,6 +369,7 @@ p, h2, h3, h4 {
   color: #fff;
   display: block;
   min-height: 300px;
+  margin-bottom: 40%;
 }
 .welcome-verbete .internal-verbete {
   margin-left: 10%;
@@ -332,7 +381,7 @@ p, h2, h3, h4 {
 }
 .welcome-verbete .internal-verbete div, .welcome-verbete .internal-verbete details {
   margin: 0 50px 0 40px;
-  font-family: DurangoKid;
+  font-family: TimesNewRoman, serfi;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -347,8 +396,17 @@ p, h2, h3, h4 {
   font-size: 18px;
   line-height: 1.33;
 }
-.welcome-verbete .internal-verbete div .entry-text, .welcome-verbete .internal-verbete details .entry-text {
-  font-size: 18px;
+.welcome-verbete .internal-verbete p {
+  font-family: TimesNewRoman, serfi;
+}
+
+.entry-text {
+  font-size: 1.3rem;
+  font-family: TimesNewRoman, serfi;
+}
+
+h3 {
+  font-family: DurangoKidMedium;
 }
 
 .welcome-sidebar {
@@ -359,6 +417,8 @@ summary {
   display: block;
   position: relative;
   /* Add positioning */
+  font-size: 2rem;
+  font-family: DurangoKidMedium;
 }
 
 /* Create a new custom triangle on the right side */
@@ -2147,6 +2207,32 @@ img {
   font-weight: normal;
   font-style: normal;
 }
+.header-img {
+  fill: white !important;
+  -webkit-mask: url("../img/header-s.png") no-repeat center;
+}
+
+.Header {
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 40%;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas: "header-img" "header-logo";
+}
+.Header .header-logo {
+  align-items: flex-end;
+  text-align: right;
+  font-family: DurangoKidMedium;
+  color: #f4f3f0;
+}
+.Header .header-logo p {
+  margin: 0;
+}
+.Header .header-logo i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 body, .main {
   background-color: #262626;
 }
@@ -2176,6 +2262,9 @@ p, h2, h3, h4 {
 .internal-verbete .subtitle-name {
   margin-left: 10%;
 }
+.internal-verbete .about-project {
+  margin: 10px 50px 0 40px;
+}
 
 .exposition-button, .inscription-button {
   margin: 0 0 0 8.5px;
@@ -2185,7 +2274,7 @@ p, h2, h3, h4 {
   background-color: #f4f3f0;
   color: #262626;
   font-size: 22px;
-  font-family: SuisseWorks;
+  font-family: DurangoKidMedium, serif;
   max-width: 350px;
   display: block;
   transition: 0.5s;
@@ -2195,10 +2284,10 @@ p, h2, h3, h4 {
 
 .subtitle-name {
   margin-top: 10%;
-  margin-bottom: 0%;
+  margin-bottom: 5%;
   font-family: DurangoKidMedium;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.84;
@@ -2228,17 +2317,23 @@ p, h2, h3, h4 {
   grid-area: Menu;
   align-items: center;
   justify-items: center;
+  margin-top: 5%;
 }
 
 .exposition-img {
   fill: #fff;
   background-image: url("../img/logo/LOGO_Constituinte.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80vh 30vh;
-  height: 50vh;
   width: 100%;
-  transition: background-color 1s, width 1s;
+  /* Ocupa toda a largura disponível */
+  height: 0;
+  padding-top: 30.7152259763%;
+  /* Calcula a proporção da imagem */
+  background-size: contain;
+  /* Faz a imagem caber dentro do elemento */
+  background-repeat: no-repeat;
+  /* Evita a repetição da imagem */
+  background-position: center;
+  /* Posiciona a imagem no centro */
 }
 
 @media screen and (min-width: 1000px) {
@@ -2254,6 +2349,10 @@ p, h2, h3, h4 {
   }
 }
 @media screen and (max-width: 1000px) {
+  .welcome-verbete {
+    margin-bottom: 0 !important;
+  }
+
   .exposition-buttons {
     display: grid;
     grid-template-columns: 100%;
@@ -2263,17 +2362,6 @@ p, h2, h3, h4 {
     grid-template-areas: "exposition-button" "inscription-button";
     grid-area: Menu;
     margin-bottom: 20px;
-  }
-
-  .exposition-img {
-    fill: #fff;
-    background-image: url("../img/logo/LOGO_Constituinte.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 70%;
-    height: 300px;
-    width: 100%;
-    transition: background-color 1s, width 1s;
   }
 
   .Sidebar {
@@ -2300,13 +2388,17 @@ p, h2, h3, h4 {
     -o-background-size: contain;
   }
 }
+.welcome-exposition .entry-text {
+  margin: 20px;
+}
+
 @media screen and (min-width: 1000px) {
   .welcome-main {
     background-color: #262626;
     color: #f4f3f0;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 65% 10%;
+    grid-template-rows: 15% 75% 10%;
     grid-auto-flow: row;
     grid-template-areas: "welcome-logo-header" "welcome-content" "welcome-footer";
     margin: auto;
@@ -2356,6 +2448,13 @@ p, h2, h3, h4 {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset !important;
+  }
 }
 .welcome-footer {
   background-color: #262626;
@@ -2390,6 +2489,7 @@ p, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
 }
 
 .image-container {
@@ -2413,6 +2513,7 @@ p, h2, h3, h4 {
 .image-container .img-00 {
   height: auto;
   max-height: 60px;
+  margin: 15px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -2432,8 +2533,14 @@ p, h2, h3, h4 {
 }
 
 #ngongo {
+  max-height: 200px;
+  height: 100px;
+  max-width: 100px;
+}
+
+#awelle {
   max-height: 170px;
-  max-width: 70px;
+  height: 40px;
 }
 
 .footer-column h3 {
@@ -2446,6 +2553,7 @@ p, h2, h3, h4 {
   color: #fff;
   display: block;
   min-height: 300px;
+  margin-bottom: 40%;
 }
 .welcome-verbete .internal-verbete {
   margin-left: 10%;
@@ -2457,7 +2565,7 @@ p, h2, h3, h4 {
 }
 .welcome-verbete .internal-verbete div, .welcome-verbete .internal-verbete details {
   margin: 0 50px 0 40px;
-  font-family: DurangoKid;
+  font-family: TimesNewRoman, serfi;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -2472,8 +2580,17 @@ p, h2, h3, h4 {
   font-size: 18px;
   line-height: 1.33;
 }
-.welcome-verbete .internal-verbete div .entry-text, .welcome-verbete .internal-verbete details .entry-text {
-  font-size: 18px;
+.welcome-verbete .internal-verbete p {
+  font-family: TimesNewRoman, serfi;
+}
+
+.entry-text {
+  font-size: 1.3rem;
+  font-family: TimesNewRoman, serfi;
+}
+
+h3 {
+  font-family: DurangoKidMedium;
 }
 
 .welcome-sidebar {
@@ -2484,6 +2601,8 @@ summary {
   display: block;
   position: relative;
   /* Add positioning */
+  font-size: 2rem;
+  font-family: DurangoKidMedium;
 }
 
 /* Create a new custom triangle on the right side */
@@ -2592,7 +2711,7 @@ details[open] > summary::after {
 }
 .post-show-logo-header .header-img {
   fill: black;
-  -webkit-mask: url("../../img/Header.svg") no-repeat center;
+  -webkit-mask: url("../img/Header.svg") no-repeat center;
   background-color: black;
 }
 

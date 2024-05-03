@@ -1,12 +1,21 @@
 <?php
 
 return [
+    'about_project' => 'É um projeto de arte e educação transmidia que propõe uma reflexão sobre o racismo no Brasil, através da investigação e análise de leis que contribuíram para a marginalização do povo negro e para as políticas de branqueamento racial da sociedade brasileira. O projeto tem ponto de partida o ano de 1823, com a primeira constituinte da nação independente, e também se compromete a retratar a agência e protagonismo de indivíduos e grupos de resistência negra contra essa política de violência e apagamento que perpetua até a contemporaneidade.',
     'exposition' => 'Exposição',
-    'exposition_text' => 'É um projeto de cinema, arte e educação que propôe uma reflexão acerca do racismo estrutural através da investigação de leis que contribuiram para a inferiorização do povo negro e para as políticas de branqueamento racial da sociedade brasileira no final do século XIX e início do século XX..',
+    'exposition_text' => 'A partir de um chamamento público, pessoas artistas negras são selecionadas para o desenvolvimento de obras sobre uma constituinte composta por personagens que pensaram em um Brasil possível e que atuaram na sociedade civil e na política antes de 1888.',
     'research' => 'Pesquisa',
-    'research_text' => 'Barreira social criada em face de costumes, leis, diferenças econômicas para separar brancos de não brancos.',
+    'research_text' => 'As professoras Ana Flávia Magalhães Pinto (História, UNB e Diretora do Arquivo Nacional) e Thula Pires (Direito, PUC-RJ) coordenam um projeto de pesquisa em parceria com mestrandos e doutorandos das áreas História e Direto. O projeto de pesquisa oferece bolsas para pessoas pesquisadoras negras investigarem e analisarem leis que marginalizaram a população negra e contribuíram para o projeto de branqueamento no país entre 1823 e a contemporaneidade. Além disso, o projeto busca examinar e documentar as resistências negras às leis racistas do mesmo período. O objetivo é promover o diálogo entre acadêmicos, juristas e sociedade civil, além de tornar o conteúdo jurídico-histórico em linguagem acessível e simples.',
     'education' => 'Educação',
-    'education_text' => 'Barreira social criada em face de costumes, leis, diferenças econômicas para separar brancos de não brancos.',
+    'education_text' => 'Um jogo como ferramenta de educação antiracista para pessoas educadoras de crianças, adolescentes e a sociedade civil a respeito do racismo institucional brasileiro e a valorização dos personagens da resistência negra, com foco na aplicabilidade da lei 10.639, que tornou obrigatório o ensino sobre História e Cultura Afro-Brasileira nos estabelecimentos de ensino fundamental e médio, públicos e privados do Brasil.
+    [Em captação de recursos]',
     'movie' => 'Filme',
-    'movie_text' => 'Ao reencontrar um autorretrato de minha avó Divina, onde a senhora negra se pinta branca, dou início a uma jornada de autoconhecimento, cura colonial e reinvenção de mim mesma. Onde memórias, sentimentos, pulsões e traumas se entremeiam a momentos históricos da política brasileira que consolidaram o projeto de branqueamento da população.',
+    'movie_text' => 'Ao encontrar um autorretrato da sua avó Divina, uma senhora negra que se pintou de branca, Mariana Luiza inicia uma jornada de cura colonial e auto-reinvenção. A narrativa se desenrola como um fluxo de pensamento, conectando uma imagem eurocêntrica, leis racistas, ruídos audíveis e memórias que se materializam durante o processo terapêutico que atravessa.
+    [Em desenvolvimento e captação de recursos]',
+    'constituinte_text' => 'Com base na Convenção do Negro para Constituinte (memórias de 1986), puxamos um fio de imaginação histórica para uma Constituinte Brasileira que não aconteceu, de um Brasil possível que ainda não existe. 
+    O capítulo mal resolvido da história do Brasil para a população negra não é o 13 de Maio de 1888, é a independência que criou um projeto de nação onde os negros viviam à margem. 
+    A Constituinte do Brasil Possível convida artistas negros a desenvolverem obras sobre uma constituinte fabulada.',
+    'constituinte_text_2' => 'E se, em 14 de maio de 1888, um dia após a Abolição da escravatura, fossa instaurada uma nova constituinte para o Brasil com uma participação equitativa da população negra na sociedade?
+    Que projetos esses cidadãos teriam para a nação, considerando o Brasil que emergia no pós-abolição? 
+    Considerando que a arte desempenha um papel fabulativo ao criar imaginários possíveis que a realidade não permite, nossa ideia é fabular uma Constituinte Negra por meio de criações artísticas. O projeto visa selecionar 10 propostas artísticas, de pessoas negras artistas, abrangendo as mais diversas linguagens artísticas. Essas propostas devem estar alinhadas aos imaginários possíveis das fabulações, estimulando a livre criatividade das pessoas proponentes, dentro dos parâmetros estabelecidos no edital.'
 ];
